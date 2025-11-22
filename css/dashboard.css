@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white; /* Màu nền nhạt */
+}
+.admin
+{
+    display: flex;
+    background-color: rgba(199, 237, 242, 1);
+    margin-top: 25px;
+    margin-left: 44px;
+    margin-right: 44px;
+    border-radius: 20px;
+}
+.admin i
+{
+    font-size: 60px;
+    margin-left: 40px;
+    display: flex;
+    margin-top: 8px;
+}
+.admin h1
+{
+    color: rgba(119, 206, 237, 1);
+    margin-left: 30px;
+    margin-top: 25px;
+}
+.admin a
+{
+   text-decoration: none;
+   color: black;
+}
+.admin p
+{
+    font-size: 20px;
+    margin-top: 26px;
+    margin-left: 1070px;
+}
+
+.sidebar
+{
+    background-color: rgba(169, 231, 250, 1);
+    height: 500px;
+    width: 300px;
+    margin-left: 48px;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+.home {
+    font-size: 77px;
+    display: flex;
+    justify-content: center;
+    padding: 28px;
+    border-bottom: 2px solid black;
+}
+.duyetcv p {
+    font-size: 29px;
+    margin-top: 10px;
+}
+.duyetcv i {
+    font-size: 46px;
+}
+.duyetcv {
+    display: flex;
+    margin-top: 35px;
+    margin-left: 27px;
+    gap: 27px;
+    border-bottom: 2px solid black;
+    width: 242px;
+}
+.duyetbai p
+{
+    font-size: 29px;
+    margin-top: -11px;
+}
+.duyetbai i{
+    font-size: 46px;
+}
+.duyetbai
+{
+        display: flex;
+    margin-top: 35px;
+    margin-left: 27px;
+    gap: 27px;
+}
+.sidebar a
+{
+    color: black;   
+    text-decoration: none;
+}
+.duyetbai a:hover
+{
+    transform: scale(1.05) translateX(5px); 
+    color: white;
+    font-weight: bold;
+    transition: all 0.4s ease; 
+}
+.duyetcv a:hover
+{
+    transform: scale(1.05) translateX(5px); 
+    color: white;
+    font-weight: bold;
+    transition: all 0.4s ease; 
+}
+
+h1 {
+    margin-left: 450px;
+}
+.tuade
+{
+    background-color: rgba(186, 226, 246, 1);
+    height: 70px;
+    width: 1088px;
+    border-radius: 17px;
+    display: flex;
+    margin-top: -33%;
+    margin-left: 25%;
+}
+p{
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+}
+.tongthongso {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 77px;
+    width: 902px;
+    height: 411px;
+    background-color: rgba(137, 198, 220, 1);
+    border-radius: 17px;
+    margin-left: 463px;
+    margin-top: 18px;
+}
+
+.thongso1, .thongso2, .thongso3, .thongso4 {
+   
+    width: 260px;
+    height: 150px; 
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(213, 234, 240, 1); 
+    border-radius: 17px;
+}
+
+/* Kiểu dáng chung cho bảng */
+.bang-tuyendung {
+    width: 85%;
+    border-collapse: collapse; /* Gộp các đường viền thành một */
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Kiểu dáng cho tất cả các ô (th và td) */
+.bang-tuyendung th, .bang-tuyendung td {
+    border: 1px solid #000; /* Viền đen 1px */
+    padding: 10px;
+    background-color: rgba(170, 242, 246, 1);
+    vertical-align: middle; /* Căn giữa nội dung theo chiều dọc */
+}
+
+/* Kiểu dáng cho tiêu đề cột */
+.bang-tuyendung th {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* -------------------- */
+/* KIỂU DÁNG CỦA CÁC NỘI DUNG ĐẶC BIỆT */
+/* -------------------- */
+
+/* Kiểu dáng chung cho ô trạng thái */
+.trang-thai {
+    display: inline-block; /* Để div có thể có kích thước cố định */
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #fff; /* Chữ trắng */
+    text-align: center;
+}
+
+/* Kiểu dáng cụ thể cho TRẠNG THÁI "Đã duyệt" */
+.trang-thai.da-duyet {
+    background-color: #00ff00; /* Màu xanh lá cây sáng */
+}
+
+/* Kiểu dáng cho nút DUYỆT */
+.nut-duyet {
+    background-color: #00ff00; /* Màu xanh lá cây sáng */
+    color: #000; /* Chữ đen */
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}

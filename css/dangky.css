@@ -1,0 +1,89 @@
+.register-container {
+    width: 90%;
+    max-width: 400px; /* Giới hạn chiều rộng tối đa */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Tiêu đề */
+h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+label {
+    display: block; /* Đặt label trên một dòng riêng */
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: normal; /* Giảm độ đậm */
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 4px;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+}
+
+.input-group i {
+    color: rgb(108, 102, 102); 
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/* Ô input */
+.input-group input {
+    flex-grow: 1; /* Cho phép input chiếm hết không gian còn lại */
+    border: none;
+    outline: none;
+    background: transparent; /* Nền trong suốt */
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+/*Phần chữ mờ trong ô input*/
+.input-group input::placeholder {
+    color: #B0B0B0;
+}
+
+/* Phần click đồng ý*/
+.terms-checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+/*Phần kích cỡ ô click đồng ý*/
+.terms-checkbox input[type="checkbox"] {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+}
+
+.terms-checkbox label {
+    margin:0; /*Đặt lại margin cho thẳng hàng với ô*/
+    font-size: 16px;
+}
+
+/* Nút Đăng Ký */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(104, 98, 98, 1); /* Màu nền nút xám đậm */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+
