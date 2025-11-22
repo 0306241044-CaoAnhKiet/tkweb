@@ -1,0 +1,203 @@
+/* Thiết lập cơ bản */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Màu nền nhạt */
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* Kế thừa màu chữ từ cha */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* CONTAINER TỔNG */
+.container {
+    max-width: auto; /* Giới hạn chiều rộng trang */
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* HEADER TOP */
+.header {
+    background-color: #3535d3; /* Màu xanh tím */
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.header-login a {
+    background-color: #7b7bff;
+    padding: 8px 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+/* KHU VỰC CHÍNH (MENU + CONTENT) - SỬ DỤNG FLEXBOX */
+.main-content {
+    display: flex;
+    min-height: 800px; /* Chiều cao tối thiểu */
+    
+}
+
+/* MENU SIDEBAR BÊN TRÁI */
+.sidebar {
+    width: 300px; /* Chiều rộng cố định */
+    background-color: #7e7efa; /* Màu xanh nhạt hơn */
+    color: white;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Sắp xếp các phần tử theo cột */
+}
+
+.menu-group {
+    padding: 20px;
+}
+
+.menu-group h2 {
+    background-color: #5d5dff;
+    padding: 10px;
+    margin: -20px -20px 10px -20px; /* Mở rộng nền ra sát cạnh */
+    font-size: 1.1em;
+}
+
+.menu-group li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.menu-group a:hover {
+    transform: scale(1.05) translateX(5px); /* Phóng to 5% và dịch chuyển sang phải 5px */
+    color: white;
+    font-weight: bold;
+}
+.sidebar a {
+    display: inline-block; 
+    /* Thêm khoảng đệm cho khu vực tương tác (Dễ bấm hơn) */
+    padding: 5px 0; 
+    transition: all 0.4s ease; 
+    text-decoration: none; 
+    color: black; 
+}
+
+/* KHU VỰC NỘI DUNG CHÍNH BÊN PHẢI */
+.content {
+    flex-grow: 1; /* Chiếm hết phần còn lại */
+    padding: 20px;
+    background-color: white;
+}
+
+/* THANH TÌM KIẾM */
+.search-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.search-bar input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.search-bar button {
+    background-color: #5d5dff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/* TIN NỔI BẬT */
+
+
+/* LÝ DO/LỢI ÍCH */
+.reason-section h3 {
+    color: #5d5dff;
+    margin-top: 0;
+}
+
+.reason-section ul {
+    list-style: disc; /* Dùng dấu chấm đầu dòng */
+    margin-left: 20px;
+}
+
+.reason-section li {
+    padding: 5px 0;
+    border-bottom: none;
+}
+
+/* FOOTER MỚI CỦA TOÀN BỘ TRANG (CHÂN TRANG) */
+.site-footer {
+    background-color: #5d5dff; /* Màu xanh tím */
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 15px;
+}
+
+.site-footer p {
+    margin: 5px 0;
+}
+
+/* ==================================== */
+/* ẢNH VÀ THẺ CÔNG VIỆC (JOB HIGHLIGHTS) */
+/* ==================================== */
+
+.job-highlights {
+    /* Sử dụng Flexbox để sắp xếp 3 thẻ nằm ngang */
+    display: flex;
+    justify-content: space-between; /* Phân bổ đều khoảng cách giữa các thẻ */
+    gap: 15px; /* Khoảng cách giữa các thẻ */
+    margin-bottom: 30px; /* Khoảng cách với phần nội dung bên dưới */
+}
+
+.job-card {
+    /* Thiết lập kích thước cho mỗi thẻ (gần 1/3, chừa chỗ cho gap) */
+    width: 33%; 
+    overflow: hidden; /* Quan trọng để ảnh không tràn ra ngoài */
+    border-radius: 8px; /* Bo tròn góc thẻ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tạo hiệu ứng đổ bóng nhẹ */
+    transition: transform 0.3s ease;
+}
+
+.job-card:hover {
+    /* Hiệu ứng khi di chuột vào */
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.job-card img {
+    /* Đảm bảo ảnh chiếm toàn bộ không gian của thẻ */
+    width: 100%; 
+    /* Quan trọng: Đảm bảo chiều cao ảnh đồng nhất, cắt ảnh nếu cần */
+    height: 150px; /* Thiết lập chiều cao cố định cho ảnh */
+    object-fit: cover; /* Căn chỉnh và cắt ảnh để vừa với kích thước, không bị méo */
+    display: block; /* Loại bỏ khoảng trắng dưới ảnh */
+}
+
+/* Tùy chỉnh nếu bạn muốn thêm tiêu đề hoặc văn bản bên dưới ảnh */
+.job-card p {
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #f8f8f8;
+    margin: 0;
+}

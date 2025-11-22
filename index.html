@@ -1,62 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
+ <!DOCTYPE html>
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/dashboard.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>ADMIN</title>
+    <title>Tìm Việc & Tuyển Dụng Đơn Giản</title>
+    <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
-    <header>
-        <div class="admin">
-        <a href="../admin/dashboard.html">
-            <i class="fa-solid fa-user-tie"></i>
-        </a>
-        <h1>ADMIN</h1>
-        <a href="../index.html">
-            <p>Đăng xuất</p>
-        </a>
-    </div>
-    </header>
-    <aside class="sidebar">
-            <div class="home">
-                <i class="fa-solid fa-house"></i>
+    <div class="container">
+        
+        <header class="header">
+            <h1 class="header-title">NƠI BẠN CÓ THỂ TÌM VIỆC VÀ TUYỂN DỤNG</h1>
+            <div class="header-login">
+                <a href="admin/login.html">Đăng nhập</a>
+                <a href="admin/dangky.html">Đăng ký</a>
             </div>
-           <div class="duyetcv">
-            <i class="fa-solid fa-book-open"></i>
-           <a href="duyetcv.html">
-             <p>Duyệt CV</p>
-           </a>
-           </div>
-            <div class="duyetbai">
-            <i class="fa-solid fa-book"></i>
-            <a href="duyettd.html">
-                <p>Duyệt Bài<br> Tuyển Dụng</p>
-            </a>
-            </div>    
-    </aside>
-    <div class="tuade">
-        <h1>THÔNG SỐ</h1>
-    </div>
-    <div class="tongthongso">
-        <div class="thongso1">
-            <p>Các CV Đã Tạo</p>
-            <p>199</p>
-        </div>
-        <div class="thongso2">
-            <p>Các Bài Tuyển Dụng</p>
-             <p>199</p>
-        </div>
-        <div class="thongso3">
-            <p>CV Cần Duyệt</p>
-            <p>2</p>
-        </div>
-        <div class="thongso4">
-            <p>TD Cần Duyệt</p>
-            <p>3</p>
-        </div>
+        </header>
+
+        <main class="main-content">
+            
+            <aside class="sidebar">
+                <section class="menu-group job-seeker">
+                    <h2>TÌM VIỆC & TẠO CV</h2>
+                    <ul>
+                        <li><a href="cv.html">Hồ sơ CV của bạn</a></li>
+                        <li><a href="maucv.html">Gợi ý mẫu CV</a></li>
+                        <li><a href="taocv.html">Tạo CV</a></li>
+                        <li><a href="fixcv.html">Chỉnh sửa CV</a></li>
+                    </ul>
+                </section>
+
+                <section class="menu-group employer">
+                    <h2>TUYỂN DỤNG</h2>
+                    <ul>
+                        <li><a href="hosodangbai.html">Hồ Sơ Đăng Bài</a></li>
+                        <li><a href="showcv.html">Hiển thị CV ứng viên</a></li>
+                        <li><a href="dangtuyen.html">Đăng bài tuyển dụng</a></li>
+                        <li><a href="notecv.html">Các CV đã note</a></li>
+                        <li><a href="chatcv.html">Liên hệ ứng viên</a></li>
+                    </ul>
+                    <br><br><br>
+                    <a href="admin/dashboard.html">ADMIN</a>
+                </section>
+                </aside>
+    
+            <div class="content">
+                <div class="search-bar">
+                    <input type="text" placeholder="Vị trí tuyển dụng , tên công việc...">
+                    <button>Tìm kiếm</button>
+                </div>
+
+                <div class="job-highlights">
+                    <div class="job-card">
+                        <img src="tuyen-dung-3.jpg" alt="Việc làm Chất lượng">
+                    </div>
+                    <div class="job-card">
+                        <img src="tuyen-dung-cong-nhan-cnc_1711419290.png" alt="Công cụ Tạo CV Miễn phí">
+                    </div>
+                    <div class="job-card">
+                        <img src="Tuyen-dung-nhan-vien-kinh-doanh-nganh-in-1-scaled.jpg" alt="Kết nối Nhà tuyển dụng">
+                    </div>
+                </div>
+                <div class="reason-section">
+
+                <div class="reason-section">
+                    <h3>Tại sao nên tìm việc làm tại trang web chúng tôi?</h3>
+                    <ul>
+                        <li><p>Việc làm Chất lượng</p></li>
+                        <li><p>Hàng ngàn tin tuyển dụng chất lượng cao được cập nhật thường xuyên</p></li>
+                        <li><p>Đáp ứng nhu cầu tìm việc của ứng viên.</p></li>
+                        <li><p>Hệ thống thông minh tự động gợi ý các công việc phù hợp theo CV của bạn.</p></li>
+                        <li><p>Công cụ viết CV đẹp Miễn phí</p></li>
+                        <li><p>Nhiều mẫu CV đẹp, phù hợp nhu cầu ứng tuyển các vị trí khác nhau.</p></li>
+                        <li><p>Tương tác trực quan, dễ dàng chỉnh sửa thông tin, tạo CV online nhanh chóng.</p></li>
+                        <li><p>Hỗ trợ Người tìm việc</p></li>
+                        <li><p>Nhà tuyển dụng chủ động tìm kiếm và liên hệ với bạn qua hệ thống kết nối ứng viên</p></li>
+                        <li><p>Báo cáo chi tiết Nhà tuyển dụng đã xem CV và gửi offer tới bạn.</p></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="site-footer">
+            <p>📧 Email: timvieclam@gmail.com</p>
+            <p>📞 Điện thoại: 0707589654</p>
+            <p>&copy; 2025 Tìm việc và tuyển dụng độc quyền.</p>
+        </footer>
     </div>
 </body>
-
+</html>
+</body>
 </html>

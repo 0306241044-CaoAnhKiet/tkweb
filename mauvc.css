@@ -1,0 +1,94 @@
+  h1
+{
+    margin-top:  5%;
+    margin-left: 38%;
+    font-family: Arial;
+}
+img
+{
+   width: 28%; 
+  border-radius: 5px;
+  overflow: hidden;
+
+}
+.maucv
+{
+  display: flex;
+  gap: 20px;
+   justify-content: center;
+}
+img:hover
+{
+     transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+     transition: transform 0.3s ease;
+}
+.luachon
+{
+  font-family: Arial;
+  font-size: 30px;
+  justify-content: flex-start;
+  padding: 20px;
+}
+.ghichu
+{
+  display: flex;
+  justify-content: space-around;
+  font-family: Arial;
+  font-size: 19px;
+}
+.note {
+    margin-left: 10%;
+    margin-top: -12px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+h2
+{
+  margin-left: 7%;
+}
+.note-cv
+{
+    display: flex;
+    margin-top: 27px;
+    font-size: 24px;
+}
+.note1
+{
+  margin-left: 26%;
+  display: flex;
+    gap: 40px;
+}
+.note2
+{
+     margin-left: 23%;
+    display: flex;
+    gap: 40px;
+}
+.note3
+{
+   margin-left: 22%;
+    display: flex;
+    gap: 40px;
+}
+.chat-all
+{
+  display: flex;
+    justify-content: center;
+    gap: 29%;
+    margin-top: 24px;
+    font-size: 22px;
+}
+.tieudechat
+{
+  display: flex;
+  justify-content: center; 
+}
+
+
+
+
+
+
+
+
